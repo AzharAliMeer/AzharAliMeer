@@ -1,29 +1,36 @@
-- 👋 Hi, I’m @AzharAliMeer
-- 👀 I’m interested in Web developing
-- 🌱 I’m currently learning Java script
-- 💞️ I’m looking to collaborate on Microsoft and gogle
-- 📫 How to reach me on gmail (azharalimeer44@gmail.com) and my phone number is 03409539630
-- 😄 Pronouns: Azzu and Azharu
-- ⚡ Fun fact: I love music
+# Paramount Education System Skardu - Official School Website
 
-Hi there! 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
-I'm [Azhar ali meer], a [18] student from [Pakistan] currently interested in [Backend developer] in the tech field. I'm passionate about [A full stack web developer].
+## Introduction
+The Paramount Education System Skardu website is a comprehensive and user-friendly platform designed to showcase the institution's excellence in education. Built with a modern web development approach, this website serves as an online portal for students, parents, and teachers to stay connected and informed.
 
-**Skills:**
+## Table of Content
+  * [Introduction](#introduction)
+  * [Screenshot](#screenshot)
+  * [Features](#features)
+  * [Technologies Used](#technologies-used)
+  * [How to Use](#how-to-use)
+  * [Deployment](#deployment)
+  * ## Screenshot
+![image]([https://user-images.githubusercontent.com/106135144/196727097-50c0ae49-b92f-4aa9-bdcb-30d978a44125.png](https://i.postimg.cc/13hmywxR/Paramount.jpg))
 
-* [Html]
-* [CSS]
-* [Java script]
+## Features
+1. Modern UI
+2. Easy Navigation
+3. Responsive Design
 
-**Projects:**
+## Technologies Used
+- HTML
+- Tailwind CSS
+- Javascript
+- Netlify
 
-* [Project Name 1] - [Brief Description and Link]
-* [Project Name 2] - [Brief Description and Link]
+## How to Use
+To use the Movies Web UI, simply clone the repository and run the index.html file in your preferred browser.
 
-**Connect with me:**
-
-* [LinkedIn Profile Link] (Optional)
-* [Twitter Profile Link] (Optional)
-
-I'm always open to learning new things and collaborating on interesting projects. Feel free to reach out!
+## Deployment
+This project has been deployed on Netlify and is available for use by anyone.
