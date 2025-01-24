@@ -16,7 +16,7 @@ The Paramount Education System Skardu website is a comprehensive and user-friend
   * [How to Use](#how-to-use)
   * [Deployment](#deployment)
   * ## Screenshot
-![image]([https://user-images.githubusercontent.com/106135144/196727097-50c0ae49-b92f-4aa9-bdcb-30d978a44125.png](https://i.postimg.cc/13hmywxR/Paramount.jpg))
+![image](https://i.postimg.cc/13hmywxR/Paramount.jpg))
 
 ## Features
 1. Modern UI
