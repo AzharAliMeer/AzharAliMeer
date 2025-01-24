@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="seo is a loremLorem ipsum dolor, sit amet consectetur adipisicing elit">
+    <link rel="shortcut icon" href="https://i.postimg.cc/MGQ2L95Q/321455490-535049245310340-2980738909667656857-n-removebg.png"
+        type="image/x-icon">
+    <title>Paramount Education System, Shardu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 90px;
+            width: 1200px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 60px;
+            color: rgb(0, 0, 0);
+            font-family: Georgia, serif;
+            font-size: 25px;
+            font-style: oblique;
+            border: 5px solid rgb(0, 0, 0);
+            display: flex;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            /* Ensure header is on top */
+        }
+
+        body {
+            background-image: url("https://i.postimg.cc/d0P8gzcr/learning-3249827-1280.jpg");
+            background-size: 1349px 660px;
+            background-repeat: no-repeat;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            /* This centers vertically */
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: space-between;
+            /* Adjust as needed */
+            align-items: center;
+            /* Align items vertically in the center */
+        }
+
+        .navbar-nav {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 20px;
+            /* margin-left: 180px; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: oblique;
+        }
+
+        .navbar-nav li {
+            margin-left: 40px;
+            /* Adjust as needed */
+
+        }
+
+        .navbar-nav li a {
+            text-decoration: none;
+            color: black;
+            /* Adjust link color as needed */
+
+        }
+
+        .navbar-nav li a:hover {
+            color: blue;
+            /* Adjust link hover color as needed */
+        }
+
+        .container4 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: blue;
+            margin-top: 200px;
+            font-display: flex;
+            margin-left: 430px;
+            font-size: 25px;
+        }
+
+        .container5 {
+            color: rgb(255, 0, 0);
+            margin-left: 300px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Apply animation to both h elements */
+        .container4 h1 {
+            overflow: hidden;
+            border-right: 2px solid black;
+            /* Simulates typing cursor */
+            white-space: nowrap;
+            /* Prevents text from wrapping */
+            animation: typing 4s steps(30, end) forwards;
+            /* Adjust duration as needed */
+        }
+
+        .container5 h2 {
+            overflow: hidden;
+            border-right: 2px solid black;
+            /* Simulates typing cursor */
+            white-space: nowrap;
+            /* Prevents text from wrapping */
+            animation: typing 4s steps(30, end) forwards;
+            /* Adjust duration as needed */
+
+        }
+
+        /* Transition for image */
+        .center img {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Apply animation to the image after a delay */
+        .center img.show {
+            opacity: 1;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 20px 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .container6 {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+            gap: 20px;
+        }
+
+        /* Left and Right Sections */
+        .left,
+        .right {
+            flex-basis: 45%;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            /* Semi-transparent black background */
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            /* For clean animations */
+            opacity: 0;
+            /* Hidden by default */
+            transform: translateY(50px);
+            /* Initially pushed down */
+            transition: opacity 0.8s ease, transform 1s ease;
+        }
+
+        /* Apply the visible state */
+        .left.show,
+        .right.show {
+            opacity: 1;
+            transform: perspective(900px) translate3d(30px, 0, 10px) rotateY(361deg);
+        }
+
+        /* Heading styling */
+        h3,
+        h4 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #ff0000;
+        }
+
+        p {
+            font-size: 26px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Paragraph transition with delay */
+        p.delay-1 {
+            transition-delay: 0.5s;
+        }
+
+        p.delay-2 {
+            transition-delay: 0.7s;
+        }
+
+        p.delay-3 {
+            transition-delay: 0.9s;
+        }
+
+        p.delay-4 {
+            transition-delay: 1.2s;
+        }
+
+        span h5 {
+            margin-top: 90px;
+            font-size: 90px;
+            margin-left: 37%;
+            color: rgb(0, 26, 255);
+            box-sizing: border-box;
+            border: 5px black;
+            border-bottom: 5px solid rgb(255, 0, 0);
+            /* Change color as desired */
+            border-bottom-width: 10px;
+            width: 350px;
+            /* Decrease length to 50px */
+        }
+
+        .custom-strap {
+            display: inline-block;
+            position: relative;
+        }
+
+        .custom-strap::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            /* Adjust thickness of the strap */
+            background-color: #ff0000;
+            /* Change color as desired */
+        }
+
+        .container7 {
+            margin-left: 20px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .container7 h6 {
+            color: blue;
+            display: flex;
+            justify-content: center;
+            font-weight: 209900;
+            font-size: 70px;
+            font-style: inherit;
+            font-variant: inherit;
+            box-sizing: border-box;
+            border: 5px black;
+            border-bottom: 5px solid rgb(253, 1, 1);
+            /* Change color as desired */
+            border-bottom-width: 10px;
+            width: 680px;
+            /* Decrease length to 50px */
+            margin-left: 300px;
+            margin-bottom: 30px;
+
+
+        }
+
+        .container7 div {
+            width: 40%;
+            /* background: #fff; */
+            margin-left: 30px;
+            color: #000000;
+            text-align: center;
+            font-size: 40px;
+            margin-top: -30px;
+            /* background-color: rgb(255, 255, 255); */
+            font-style: oblique;
+            font-weight: bolder;
+            /* float: left; */
+
+        }
+
+        .container7 img {
+            display: block;
+            /* Ensure the image is a block element */
+            width: 45%;
+            /* Adjust image width */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            box-sizing: border-box;
+            border: black 100px;
+        }
+
+        .container7 h7 {
+            transform: translate(-50%, -50%);
+            background-color: rgb(255, 255, 255);
+            /* Optional: Add a background color for better readability */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-style: oblique;
+            /* background-attachment: fixed; */
+            position: relative;
+        }
+
+        .container8 {
+            display: block;
+
+        }
+
+        .container8 div {
+
+            background: #fff;
+            text-align: center;
+            color: #000000;
+
+            background-color: rgb(255, 255, 255);
+            font-style: oblique;
+            font-weight: bolder;
+
+        }
+
+        .container7 .container8 {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .container8 img {
+            display: block;
+            /* Ensure the image is a block element */
+            width: 550px;
+            height: 385px;
+            margin-right: 20px;
+            margin-top: -33%;
+            float: right;
+        }
+
+        .container8 h8 {
+            transform: translate(-50%, -50%);
+            background-color: rgb(255, 255, 255);
+            /* Optional: Add a background color for better readability */
+            margin-bottom: 20px;
+            /* box-sizing: border-box; */
+            font-style: oblique;
+            font-size: 40px;
+            float: right;
+            margin-right: 100px;
+            margin-top: -44px;
+            font-style: oblique;
+            font-weight: bolder;
+            /* background-size: 100px; */
+            /* background-attachment: fixed; */
+
+        }
+
+        .container7 img,
+        .container8 img,
+        .container9 img {
+            border: 10px solid black;
+            transition: transform 0.5s linear
+        }
+
+        .container7 img:hover,
+        .container8 img:hover,
+        .container9 img:hover {
+            transform: scale(1.1);
+        }
+
+        .container9 img {
+            width: 600px;
+            height: 300px;
+            margin-left: 350px;
+        }
+
+        .container9 h9 {
+            font-size: 45px;
+            margin-right: 180px;
+            font-style: oblique;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            background-color: rgb(255, 255, 255);
+            /* Optional: Add a background color for better readability */
+            margin-bottom: 20px;
+            /* box-sizing: border-box; */
+            font-style: oblique;
+            font-size: 40px;
+            float: right;
+            margin-top: -20px;
+            font-style: oblique;
+            font-weight: bolder;
+            /* background-size: 100px; */
+            background-attachment: fixed;
+            position: static;
+            display: flex;
+        }
+
+        .h7 .h8 .h9 {
+            place-content: fixed;
+        }
+
+        .container10 {
+            background-image: url("https://i.postimg.cc/QN0JV4cZ/black-1072366-1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 600px;
+            /* Set the height of the container */
+            width: 1360px;
+            /* Set the width of the container */
+            position: relative;
+            /* Ensure relative positioning for children */
+        }
+
+        .container10 h10 {
+            font-size: 60px;
+            color: white;
+            margin-left: 580px;
+            font-weight: bolder;
+            margin-top: -60px;
+            font-style: inherit;
+            font-variant: inherit;
+            box-sizing: border-box;
+            border: 5px black;
+            border-bottom: 5px solid rgb(0, 0, 0);
+            /* Change color as desired */
+            border-bottom-width: 10px;
+            width: 680px;
+        }
+
+        .container10 img {
+            display: flex;
+            justify-content: left;
+            margin-left: 30px;
+            padding-top: 50px;
+        }
+
+        .container10 div {
+            float: right;
+            margin-top: -300px;
+        }
+
+        .div.form.php {
+            font-size: 30px;
+            padding-top: 100px;
+        }
+
+        ::placeholder {
+            font-size: 18px;
+            /* Adjust the size as needed */
+        }
+
+        input[type="text"] {
+            width: 600px;
+            /* Set the width as needed */
+            height: 50px;
+            margin-left: -800px;
+            margin-top: -30px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            float: center;
+        }
+
+        input[type="text1"] {
+            width: 600px;
+            /* Set the width as needed */
+            height: 70px;
+            margin-left: -800px;
+            margin-top: -10px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .btn {
+            background: #e0af14;
+            border: none;
+            color: #fff;
+            width: 200px;
+            height: 65px;
+            text-transform: uppercase;
+            font-size: 21px;
+            padding: 0;
+            font-weight: 500;
+            cursor: pointer;
+            transition: ease all 0.5s;
+            float: right;
+            margin-right: 195px;
+            margin-top: 35px;
+        }
+
+        .container11 img {
+            width: 100px;
+            margin-left: 130px;
+            margin-top: 40px;
+        }
+
+        .container11 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTehHF_jH-q1kF1I7gBSi10k3vJkhTqwpM0hbv5PwCGmg&s");
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        .container11 p {
+            font-size: 20px;
+            margin-left: 50px;
+        }
+
+        .container11 h11 {
+            font-size: 40px;
+            margin-left: 500px;
+            display: inline;
+        }
+
+        .container11 div span h11 {
+            display: table;
+            margin-top: -125px;
+            margin-left: 525px;
+            color: white;
+            font-weight: bolder;
+            box-sizing: border-box;
+            border: 5px black;
+            border-bottom: 5px solid rgb(255, 238, 0);
+            /* Change color as desired */
+            border-bottom-width: 5px;
+        }
+
+        .container11 p1 {
+            font-size: 20px;
+            margin-left: 430px;
+            color: white;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        .container11 div span h12 {
+            display: table;
+            font-size: 40px;
+            margin-top: -96px;
+            margin-left: 840px;
+            color: white;
+            font-weight: bolder;
+            box-sizing: border-box;
+            border: 5px black;
+            border-bottom: 5px solid rgb(217, 255, 0);
+            /* Change color as desired */
+            border-bottom-width: 5px;
+        }
+
+        .container11 p2 {
+            font-size: 20px;
+            margin-left: 820px;
+            color: white;
+            margin-top: -20px;
+        }
+
+        .container11 div span h13 {
+            display: table;
+            font-size: 40px;
+            margin-top: -90px;
+            margin-left: 1020px;
+            color: white;
+            font-weight: bolder;
+            box-sizing: border-box;
+            border: 5px black;
+            border-bottom: 5px solid rgb(229, 255, 0);
+            /* Change color as desired */
+            border-bottom-width: 5px;
+        }
+
+        .container11 p3 {
+            font-size: 20px;
+            margin-left: 1100px;
+            color: white;
+            margin-top: -20px;
+        }
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 20px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://i.postimg.cc/MGQ2L95Q/321455490-535049245310340-2980738909667656857-n-removebg.png"
+            alt="Paramount Education System">
+        <span style="margin-top: 30px;margin-left:5px;font-size: 30px;font-weight: bold;" class="logo-name">Paramount
+            Education System
+        </span>
+        <button id="togglebar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+            aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+
+        </button>
+        <div class="container3" id="navbar-wd">
+            <ul class="navbar-nav">
+                <li><a class="nav-link active" href="http://paramountskd.edu.pk/">Home</a></li>
+                <li><a class="nav-link active" href="http://paramountskd.edu.pk/Home/admission">Admissions</a></li>
+                <li><a class="nav-link active" href="http://paramountskd.edu.pk/Home/about">About us</a></li>
+                <li><a class="nav-link active" href="http://paramountskd.edu.pk/Home/contact">Contact us</a></li>
+                <li><a class="nav-link active" href="http://paramountskd.edu.pk/Identity/Account/Login">Login</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="container4">
+        <h1>LEARNING IS A TREASURE</h1>
+    </div>
+    <div class="center"> <img src="https://i.postimg.cc/MGQ2L95Q/321455490-535049245310340-2980738909667656857-n-removebg.png"
+            alt="Paramount logo" width="250px"></div>
+
+    <div class="container5">
+        <h2>THAT WILL FOLLOW ITS OWNER EVERYWHERE</h2>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                document.querySelector('.center img').classList.add('show');
+            }, 4000); /* Delay to show the image after the h1 typing animation */
+        });
+    </script>
+
+    <Body
+        background="https://www.dreamstime.com/stock-photo-back-to-school-hero-header-education-background-image57244681">
+    </Body>
+    <span>
+        <h5>NOTICE</h5>
+    </span>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission and Vision</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <div class="container6">
+        <div class="left">
+            <h3 class="transition">OUR MISSION</h3>
+            <p class="transition delay-1">Our mission is to foster the growth of leaders by offering a unique
+                educational
+                approach that emphasizes both intellectual enrichment and the cultivation of strong character traits.
+            </p>
+            <p class="transition delay-2">Through our curriculum, we instill in students the values of integrity,
+                compassion, and
+                resilience, preparing them to navigate the complexities of the modern world with confidence and
+                integrity.
+            </p>
+            <p class="transition delay-3">We believe in providing a supportive learning environment where students are
+                encouraged
+                to explore their potential, develop critical thinking skills, and embrace diverse perspectives.
+            </p>
+            <p class="transition delay-4">By prioritizing both academic excellence and personal growth, we empower our
+                students to
+                become ethical leaders who inspire positive change in society.</p>
+        </div>
+
+        <div class="right">
+            <h4 class="transition">OUR VISION</h4>
+            <p class="transition delay-1">Our vision is to foster the development of leaders within every child,
+                recognizing and
+                nurturing their unique talents and strengths of character.</p>
+            <p class="transition delay-2">We believe in empowering young individuals to embrace their potential,
+                instilling in
+                them the confidence and resilience needed to navigate life's challenges.</p>
+            <p class="transition delay-3">By cultivating a culture that values both personal growth and community
+                contribution, we
+                aim to create a generation of proactive, compassionate leaders who inspire positive change in the
+                world.</p>
+            <p class="transition delay-4">Through education, mentorship, and unwavering support, we strive to unlock the
+                full
+                potential of every child, shaping them into capable leaders of tomorrow.</p>
+        </div>
+    </div>
+    <div class="container7">
+
+        <h6>SPECIAL FOCUS ON</h6>
+        <img src="https://www.dokeos.com/wp-content/uploads/2021/02/e-learning-history-1.jpg" alt="#" width="600px">
+        <div>
+            <h7>E-LEARNING</h7>
+        </div>
+    </div>
+    <div class="container8">
+        <img src="https://www.starcity.pk/wp-content/uploads/2022/03/dany-digital-quran-AK-777-6.jpg" alt="#">
+        <h8>E-QURAN</h8>
+    </div>
+
+    <div class="container9">
+        <img src="https://samlabs.com/uk/wp-content/uploads/2021/04/STEAM-Pillar-3-1-1200x484.jpg" alt="#">
+        <h9>STEAM BASE EDUCATION</h9>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container10">
+        <h10>Contact Us</h10>
+        <br>
+        <img src="https://i.postimg.cc/RhMdy2fX/1000-F-460710131-Yk-D6-Nsivdy-Ys-Hup-Nv-O3-Y8-MPEwx-TAh-ORh.jpg" alt="#" width="500px">
+        <div>
+            <form action="form.php">
+                <input type="text" placeholder="Enter your name">
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="text" placeholder="Email" font-size="20px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="text" placeholder="Phone Number">
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="text1" placeholder="Feedback">
+            </form>
+        </div>
+        <br>
+        <br>
+        <button class="btn">Send</button>
+        <br>
+        <br>
+
+      
+    </div>
+    <div class="container11">
+        <img src="https://i.postimg.cc/MGQ2L95Q/321455490-535049245310340-2980738909667656857-n-removebg.png" alt="PESS">
+
+        <p>Paramount Education System, Skardu</p>
+        <div>
+            <span>
+                <h11>Address</h11>
+            </span>
+        </div><br>
+        <p1>Hasnain Nagar, Alamdar Chowk, Skardu</p1>
+        <div>
+            <span>
+                <h12>Email</h12>
+            </span>
+        </div><br>
+        <p2>pes.skd@gmail.com</p2>
+        <div>
+            <span>
+                <h13>Contact Number</h13>
+            </span>
+        </div><br>
+        <p3>05815455269
+        </p3>
+
+        <Body
+            background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTehHF_jH-q1kF1I7gBSi10k3vJkhTqwpM0hbv5PwCGmg&s">
+        </Body>
+    </div>
+    <br>
+    <footer>
+        <p>&copy; This website is created by Azhar Ali. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+        
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the "show" class when the section is in view
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, {
+        threshold: 0.2 // Trigger when 20% of the element is visible
+    });
+
+    // Observe each section (left and right)
+    document.querySelectorAll('.left, .right').forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</html>
