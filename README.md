@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AzharAliMeer
 - 👀 I’m interested in Web developing
 - 🌱 I’m currently learning Java script
-- 💞️ I’m looking to collaborate on Microsoft and gogle
+- 💞️ I’m looking to collaborate on Microsoft and Google
 - 📫 How to reach me on gmail (azharalimeer44@gmail.com) and my phone number is 03409539630
 - 😄 Pronouns: Azzu and Azharu
 - ⚡ Fun fact: I love music
